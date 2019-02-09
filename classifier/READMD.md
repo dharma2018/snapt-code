@@ -1,12 +1,13 @@
 ### 점심 메뉴
-순대국
-양평해장국
-갈비탕
-뚝배기 불고기
-쌈밥
-보쌈
-제육볶음
-야채쌈(배추쌈, 된장), 야채 샐러드
-스테이크
+* 순대국
+* 양평해장국
+* 갈비탕
+* 뚝배기 불고기
+* 쌈밥
+* 보쌈
+* 제육볶음
+* 야채쌈(배추쌈, 된장), 야채 샐러드
+* 스테이크
 
-
+### chatbot classifier
+[Text Classification using Algorithms](https://chatbotslife.com/text-classification-using-algorithms-e4d50dcba45)
