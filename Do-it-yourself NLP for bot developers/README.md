@@ -86,7 +86,8 @@ model.wv.most_similar(positive=['man', 'princess'], negative=['woman']) # positi
 
 </pre>
 
-[국내 최대의 데이터 사이언스 강의 사이트 마인드스케일](https://mindscale.kr/)
-[11. 단어 임베딩](http://doc.mindscale.kr/km/unstructured/11.html)
+* [국내 최대의 데이터 사이언스 강의 사이트 마인드스케일](https://mindscale.kr/)
+* [11. 단어 임베딩](http://doc.mindscale.kr/km/unstructured/11.html)
+
 
 
