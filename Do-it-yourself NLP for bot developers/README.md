@@ -45,5 +45,48 @@ CBOW(특정 단어를 예측), Skip-Gram(특정 단어 주변의 단어를 예�
 
 
 
+### Word Embedding
+<pre>
+import requests
+import re
+
+res = requests.get('https://www.gutenberg.org/files/2591/2591-0.txt')
+
+grimm = res.text[2801:530661]
+grimm = re.sub(r'[^a-zA-Z\. ]', ' ', grimm)
+
+sentences = grimm.split('. ')  # 문장 단위로 자름
+data = [s.split() for s in sentences]
+
+data[0]   # 첫 번째 문장을 단어 단위로 자른 결과를 확인하자
+
+# word2vec 를 필요한 gensim 패키지를 설치
+!conda install -y gensim
+
+from gensim.models.word2vec import Word2Vec
+
+model = Word2Vec(data,         # 리스트 형태의 데이터
+                 sg=1,         # 0: CBOW, 1: Skip-gram
+                 size=100,     # 벡터 크기
+                 window=3,     # 고려할 앞뒤 폭(앞뒤 3단어)
+                 min_count=3,  # 사용할 단어의 최소 빈도(3회 이하 단어 무시)
+                 workers=4)    # 동시에 처리할 작업 수(코어 수와 비슷하게 설정)
+
+model.save('word2vec.model')
+
+model = Word2Vec.load('word2vec.model')
+model.wv['princess']
+
+model.wv.similarity('princess', 'queen') # 두 단어를 넘겨주면 코사인 유사도를 구할 수 있다.
+
+model.wv.most_similar('princess') # 단어를 넘겨주면 가장 유사한 단어를 추출할 수 있다.
+
+model.wv.most_similar(positive=['man', 'princess'], negative=['woman']) # positive와 negative라는 옵션을 넘겨줄 수 있다.
+
+
+</pre>
+
+[국내 최대의 데이터 사이언스 강의 사이트 마인드스케일](https://mindscale.kr/)
+[11. 단어 임베딩](http://doc.mindscale.kr/km/unstructured/11.html)
 
 
