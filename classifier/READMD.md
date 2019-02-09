@@ -11,6 +11,15 @@ https://www.youtube.com/watch?v=fsYRhJu2APo
 * 야채쌈(배추쌈, 된장), 야채 샐러드
 * 스테이크
 
+* 청양고추
+* 파
+* 버섯
+* 부추
+* 당근
+* 브로컬리
+* 브로컬리
+
+
 ### chatbot classifier
 * [Text Classification using Algorithms](https://chatbotslife.com/text-classification-using-algorithms-e4d50dcba45)
 * [A brief introduction to Intent Classification](https://towardsdatascience.com/a-brief-introduction-to-intent-classification-96fda6b1f557)
