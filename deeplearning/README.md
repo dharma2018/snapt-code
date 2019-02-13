@@ -13,4 +13,6 @@
 ### 케라스 설치
 * pip install keras
 
+### 파이참 설치
+* [설치본](https://www.jetbrains.com/pycharm/download/#section=windows)
 
