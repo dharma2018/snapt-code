@@ -2,7 +2,7 @@
 ### 개발환경구축
 
 ### 가상환경 설치
-* conda create -n tutorial python=3.5 numpy scipy matpliotlib spyder pandas seaborn scikit-learn h5py
+* conda create -n tutorial python=3.5 numpy scipy matplotlib spyder pandas seaborn scikit-learn h5py
 * activate tutorial
 
 
