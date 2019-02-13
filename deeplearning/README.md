@@ -8,6 +8,7 @@
 
 ### 테서플로 설치
 * pip install tensorflow-gpu
+* pip install cython
 
 ### 케라스 설치
 * pip install keras
